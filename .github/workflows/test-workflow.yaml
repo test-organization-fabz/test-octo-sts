@@ -14,7 +14,7 @@ jobs:
         uses: octo-sts/action@6177b4481c00308b3839969c3eca88c96a91775f # v1.0.0
         id: octo-sts
         with:
-          scope: test-fabz-organization/test-octo-sts-destination
+          scope: test-organization-fabz/test-octo-sts-destination
           identity: update-readme
 
       # this uses GITHUB_TOKEN, the built-in short-lived token for this repo only
@@ -27,6 +27,6 @@ jobs:
       - name: Checkout profile repo
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          repository: test-fabz-organization/test-octo-sts-destination
+          repository: test-organization-fabz/test-octo-sts-destination
           path: profile
           token: ${{ steps.octo-sts.outputs.token }}
