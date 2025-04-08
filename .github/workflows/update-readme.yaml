@@ -15,7 +15,7 @@ jobs:
         id: octo-sts
         with:
           scope: test-organization-fabz/test-octo-sts-destination
-          identity: update-readme
+          identity: baz
 
       # this uses GITHUB_TOKEN, the built-in short-lived token for this repo only
       - name: Checkout website repo 
